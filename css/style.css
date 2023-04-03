@@ -355,6 +355,9 @@ ol {
 }
 
 @media (max-width: 1024px) {
+    .header.fixed-header {
+        background-color: #222;
+    }
     nav {
         display: none;
     }
