@@ -1,0 +1,21 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+          fill: none;
+        stroke: #282828;
+	stroke-width:1;
+	vector-effect: non-scaling-stroke;
+      }
+
+      .cls-2 {
+        fill: #282828;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-1" x="3.49" y="3.49" width="17.02" height="17.02" rx="2.42"/>
+    <circle class="cls-1" cx="11.97" cy="12" r="4.02"/>
+    <path class="cls-2" d="M18.05,7a1,1,0,1,0-1,1A1,1,0,0,0,18.05,7Z"/>
+  </g>
+</svg>

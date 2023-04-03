@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 400vh;
+            overflow-x: hidden;
+        }
+
+        #parent {
+            height: 100vh;
+            position: relative;
+            top: 100vh;
+            box-sizing: border-box;
+        }
+        #nav{
+            position: sticky;
+            height: 200px;
+            top: 200px;
+            background-color: red;
+        }
+        #sticky {
+            position: sticky;
+            height: 200px;
+            top: 0;
+            background-color: #FFF4ED;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="nav"></div>
+        <div id="sticky"></div>
+    </div>
+</body>
+
+</html>
