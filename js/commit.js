@@ -29,7 +29,7 @@ window.addEventListener(`resize`, function () {
     const height = window.innerHeight;
 
     if (width >= 1024) {
-        
+
     } else {
         
     }
@@ -111,6 +111,19 @@ var reviewSwiper = new Swiper(".swiper-container", {
     navigation: {
         nextEl: ".riview.swiper-button-next",
         prevEl: ".riview.swiper-button-prev",
+    },
+    breakpoints: {
+        375:{
+            slidesPerView: 1,
+            touchRatio: 1,
+        },
+        768: {
+            slidesPerView: 1.3,
+            touchRatio: 1,
+        },
+        1024: {
+            slidesPerView: 2.6,
+        },
     },
 });
 

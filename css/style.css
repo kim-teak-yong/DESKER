@@ -365,11 +365,9 @@ ol {
     .slide_wrapper {
         display: block;
     }
-
     .img_wrapper {
         width: 100%;
     }
-
     .slide_btn,
     .progressbar {
         display: none;
@@ -380,7 +378,8 @@ ol {
         height: 50%;
         width: 40%;
         left: 4%;
-        top: 20%;
+        top: 60%;
+        transform: translateY(-50%);
         background: rgba(255, 255, 255, 0.6);
         backdrop-filter: blur(5px);
         overflow: hidden;
@@ -435,10 +434,59 @@ ol {
         bottom: 0;
     }
     .dep>ul>li{
-        padding: 14px 0;
+        padding: 10px 0;
     }
 }
-
+@media (max-width: 768px) {
+    img{
+        height: 100%;
+    }
+    .img_wrapper{
+        height: 100%;
+    }
+    .slide_wrapper{
+        height: 700px;
+    }
+    .tit_wrapper{
+        height: 40%;
+        width: 60%;
+        left: 4%;
+        top: 70%;
+        display: block;
+    }
+    .slide-text{
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    img{
+        height: 100%;
+    }
+    .img_wrapper{
+        height: 100%;
+    }
+    .slide_wrapper{
+        height: 480px;
+    }
+    .tit_wrapper{
+        height: 40%;
+        width: 90%;
+        left: 4%;
+        top: 70%;
+        display: block;
+    }
+    .slide-text>p{
+        font-size: 1rem;
+    }
+    .slide-text{
+        line-height: 22px;
+    }
+}
 
 /* item list start */
 .best-item {
@@ -521,7 +569,14 @@ ol {
     background-color: #222;
     border-radius: 50%;
 }
-
+@media (max-width: 1024px) {
+    .item-list ul li{
+        width: calc(100%/2 - 10px);
+    }
+    .item-list {
+        padding: 24px 0 0 0;
+    }
+}
 /* category start */
 .category-wrap {
     display: flex;
@@ -573,7 +628,34 @@ ol {
     display: block;
     transition: 0.5s;
 }
-
+@media (max-width: 1024px) {
+    .category-wrap{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .tab-content ul li{
+        width: calc(100%/2 - 10px);
+        overflow: hidden;
+    }
+    .category-list{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .category-list ul{
+        display: flex;
+        padding: 12px 0;
+    }
+    .category-list ul li{
+        padding: 14px;
+    }
+    .category-list ul li:first-child{
+        padding-left: 0;
+        padding-top: 14px;
+    }
+    .tab-content ul li:nth-child(n+5):nth-child(-n+8){
+        display: none;
+    }
+}
 /* biz start */
 
 .biz {
@@ -587,7 +669,10 @@ ol {
     display: flex;
     justify-content: space-around;
 }
-
+.biz-bg{
+    display: flex;
+    align-items: center;
+}
 .item-btn {
     padding-top: 24px;
 }
@@ -602,9 +687,21 @@ ol {
     color: #222;
     font-size: 0.895rem;
 }
+@media (max-width: 768px){
+    .biz-inner{
+        flex-direction: column;
+    }
+    .biz-bg{
+        padding-top: 50px;
+    }
+}
+@media (max-width: 375px){
+    .dn{
+        display: none;
+    }
+}
 
 .riview-warrpy {
-    height: 100vh;
     padding: 80px 0;
 }
 
@@ -781,7 +878,12 @@ ol {
 .review-bottom {
     padding: 16px 0 28px 0;
 }
-
+@media (max-width: 1024px){
+    .riview-warrpy{
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
+}
 /*footer start*/
 
 .footer-Inner {
@@ -907,4 +1009,41 @@ ol {
 .copy p {
     font-size: 0.875rem;
     font-weight: 100;
+}
+
+@media (max-width: 1024px) {
+    .footer-list-wrap{
+        width: calc(100%/2);
+        padding: 60px 20px;
+    }
+    .footer-list-wrap:nth-child(n+1):nth-child(-n+2){
+        border-bottom: 1px solid #8E8E8E;
+    }
+    .footer-list-wrap ul li{
+        padding: 4px 0;
+        white-space: normal;
+    }
+    .footer-list-tit{
+        font-size: 1.25rem;
+    }
+}
+@media (max-width: 768px){
+    .footer-bottom-content>div{
+        width: 100%;
+        padding: 14px 0;
+    }
+    .footer-bottom-content{
+        flex-direction: column;
+    }
+    .footer-bottom-content .contant, .footer-bottom-content .info{
+        width: 100%;
+    }
+    .info .num, .footer-sns{
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 375px) {
+    .footer-list-wrap{
+        padding: 30px 20px;
+    }
 }
