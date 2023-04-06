@@ -197,7 +197,7 @@ ol {
 .fullmeun .Inner {
     display: flex;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 
 .dep.tit {
@@ -611,7 +611,7 @@ ol {
     font-weight: 100;
     cursor: pointer;
     position: relative;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 .category-list ul li.current {
@@ -647,6 +647,7 @@ ol {
     }
     .category-list ul li{
         padding: 10px;
+        transition: none;
     }
     .category-list ul li:first-child{
         padding-left: 0;

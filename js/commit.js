@@ -51,10 +51,10 @@ var mainSwiper = new Swiper(".main", {
     loop: true,
     effect: "fade",
     touchRatio: 0,
-    // autoplay: {
-    //     delay: 4000, //4초의 딜레이를 주고 자동 재생된다
-    //     disableOnInteraction: false, //좌우 버튼 클릭 시 오토플레이 멈춤오류 코드
-    // },
+    autoplay: {
+        delay: 4000, //4초의 딜레이를 주고 자동 재생된다
+        disableOnInteraction: false, //좌우 버튼 클릭 시 오토플레이 멈춤오류 코드
+    },
     pagination: {
         el: ".swiper-pagination-fraction",
         type: "fraction",
